@@ -1,13 +1,3 @@
-
-import streamlit as st
-import pickle
-from sklearn.feature_extraction.text import TfidfVectorizer
-from PIL import Image
-import re
-import string
-import nltk
-import spacy
-
 import streamlit as st
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -50,7 +40,7 @@ def lemmatizer(text):
 
 st.title("Sentiment Analysis App")
 st.markdown("By SUKANYA")
-image = Image.open("/content/pic.jpg")
+image = Image.open("pic.jpg")
 st.image(image, use_column_width=True)
 
 st.subheader("Enter your text here:")
